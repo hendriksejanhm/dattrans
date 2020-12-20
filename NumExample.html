@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head runat="server">
+    <title>Jan Hendrikse's Geodetic datum Transformation, 7 parameters, Bursa Wolf</title>
+</head>
+<body BGCOLOR="#FFFFCC" TEXT="#0hhhhh" LINK="#0080FF" VLINK="#FF0800" ALINK="#FF07000">
+<p> <b>Numerical Example </b>(change . into , if needed)<br>
+Input coordinates of a terrain-point are given with respect to the Bessel 1841 ellipsoid: (of the Dutch 'Rijksdriehoeksmeting')<br>
+latitude phi1 = 52.2 (52 degr: 12' north); longitude lam1 = 6.9 (6 degr: 54' east); <br />
+height1 above the Bessel ellipsoid = 32.46 m;  This is a point near Enschede, The Netherlands <br />  
+<br /> The approximate datum transformation parameters from the Dutch "Amersfoort" datum to the WGS84 datum are as follows:<br />
+Shifts: tx = 565, ty = 50, tz = 466 (m); the vector connecting the origin of the tri-axial coordinate frame of WGS84 to the origin of the Bessel tri-axial coordinate frame, all in terms of components wrt the WGS84 axes. <br />
+Rotations: Rx = 1985e-9, Ry = -1744e-9, Rz = 9059e-9 (radians); the (linearized) rotations needed to bring the Bessel axes parallel to the WGS84 axes. <br />
+Scale change: s = 4077e-9 (m); the difference in unit of distance to account for scale difference in the 2 geodetic sytems involved.<br />
+As output ellipsoid the WGS84, the GPS defined global datum, is selected. Not selecting an output-ellipsoid produces an error message.<br /> 
+</p>
+<p>The output coordinates of the terrain-point with respect to the WGS84 ellipsoid will be calculated as:<br>
+latitude phi2 = 52.199232; longitude lam2 = 6.900123; <br />
+height2 above the WGS84 ellipsoid = 75.745 m;<br /><br />
+Conclusion: the given terrain point lies about 85 m closer to the WGS84-equator than to the Bessel equator <br />
+and it is 43.285 m higher above the WGS84 surface compared to the Bessel surface.<br />
+The latter surface corresponds closely to the NAP 0-level, the Dutch vertical datum</p>
+Show a screen dump of the 'Datrans' calculation form 
+<a href="datrans.html">Calc Form </a><br>
+<a href="Backgroundinfo.html">Back to Explanation</a>
+</body>
+</html>

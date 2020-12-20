@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head runat="server">
+    <title>Jan Hendrikse's Geodetic datum Transformation, 7 parameters, Bursa Wolf datum shift</title>
+</head>
+<body BGCOLOR="#FFFFCC" TEXT="#0hhhhh" LINK="#0080FF" VLINK="#FF0800" ALINK="#FF07000">
+    <form id="form1" runat="server">
+    <div>
+        <span style="font-size: 14pt"><span style="font-size: 28pt"><h1><td>&nbsp;</td>Geodetic datum transformation
+            tool</h1>
+<td>&nbsp;&nbsp;&nbsp;</td><img src="Eumet11.jpg" height="270" width="304" alt="world1.jpg" />
+<td>&nbsp;</td><img src="Eumet22.jpg" height="240" width="330" alt="world2.jpg" />
+        </span>
+            <br /><I><B>
+            This site offers a tool that allows to compute and to check geodetic datum transformations.<br />
+            </B></I><br /><br>
+            If latitude, longitude and height, relative to a datum, are given, <br>and 3 shifts or
+            7 transformation parameters are known, <br>the latitude, longitude and height for any
+            other datum can be computed by this tool.<br />
+            <br >
+<p>Author: J. Hendrikse, <td width="374" height="1" valign="top" bgcolor="#FAE7DB">		
+      &nbsp;&nbsp;&nbsp; ( for contact per e-mail, click:
+      <a href="Mailto:%20hendrikse@itc.nl">Jan Hendrikse</a> )</td><br>		
+For more information, see:  <a href="Backgroundinfo.html">Explanation and example</a> or <a href="http://www.itc.nl/ilwis">ITC Enschede</a> </p>
+
+<p>Click the following link to download (save) <a href="DATRANS.exe"> DATRANS.exe</a></p>
+  <p>Press this button  <a href="DATRANS.exe"><img src="b0_357_tiny.gif" height="40" width="90" alt="b.gif" /> </a> to run the datum transformation</p> 
+    
+    Warning: if your PC expects comma's (,) as decimal symbol, please change the ellipsoid parameters accordingly and use decimal comma's in all other input as well.<br><br>
+For Remote Sensing information, see:  <a href="RemSensing.html">Earth Observation &nbsp;&nbsp;<img src="Lied_rechts.gif" height="21" width="21" /></a>
+<%
+<p>Klik link en speel fibo: <a href="MathServiceClient.aspx"> simple math</a> </p>
+<p>Vind aard-observatie satelliet info: <a href="glossary.aspx"> glossary</a></p>
+<p>Klik link voor observatie missies: <a href="AllSatellites.aspx"> Lijst met satellieten</a></p>
+<p>Klik link voor planning: <a href="Launch_Schedule.aspx">Lanceer planning</a></p> %>
+    </form>
+    <img src="/cgi-bin/Count.cgi?font=B&ft=0">&nbsp;
+</body>
+
+</html>

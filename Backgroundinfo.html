@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head runat="server">
+    <title>Jan Hendrikse's Geodetic datum Transformation, 7 parameters, Bursa Wolf</title>
+</head>
+<body BGCOLOR="#FFFFCC" TEXT="#0hhhhh" LINK="#0080FF" VLINK="#FF0800" ALINK="#FF07000">
+<span style="font-size: 10pt">
+ <p><h3><b>Background information</b><h3></p>
+<h4>General</h4>
+	<blockquote>
+	<p> 
+    This is a tool that enables the user to apply a full Datum transformation between 2 geodetic reference systems (input, output). <br>
+
+One of the systems can be the global WGS84 reference for instance, and the other can be any Local Reference System defined on any user-defined ellipsoid. 
+<br>The usual reference ellipsoids (Bessel, Clarke, Hayford (International), Airy, Everest etc.) are also provided. 
+</p>
+	</blockquote>
+<h4>Method</h4>
+<blockquote>
+<p>The transformation method uses 7 parameters (and optionally the 3 geocentric coordinates of a local centroid or pivot point). 
+<br>The method is known as Bursa-Wolf- ( cq Molodensky-Badekas-) transformation. 
+</p>
+	</blockquote>
+<h4>Input</h4>
+<blockquote>
+<p>The user has to provide the following input:<br />
+The 3 shift components of the position vector (in meters),<br> 
+The 3 rotations of the coordinate frame about the respective axes (in 10e-9 radians, 'nano-radians'),<br> 
+The difference of scale (in 10e-9 m per meter),<br> 
+Optionally the geocentric coordinates (with respect to the axes of the input ellipsoid) of a local centroid (origin of Reference System 1),<br> 
+The ellipsoid parameters a and 1/f of the input system (provided in a combo box for many usual ellipsoids),<br> 
+The ellipsoid parameters a and 1/f of the output system (provided for many usual ellipsoids),<br>
+An input (terrain-) point P, given in latitude, longitude (decimal degrees) and height (m above the input ellipsoid),<br> 
+</p>
+	</blockquote>
+<h4>Output</h4>
+<blockquote>
+Geocentric coordinates of P in the input system (Reference System 1),<br> 
+Geocentric coordinates of P in the output system (Reference System 2),<br> 
+Ellipsoidal latitude, longitude and height of P in the output system (again in decimal degrees and m respectively).<br> 
+</p>
+	</blockquote>
+
+<p> <a href="NumExample.html">Numerical Example</a> <br>
+<a href="http://gis.esri.com/library/userconf/proc03/p0376.pdf#search=%22datum%20shift%20computation%22">Reference</a>
+ </p>
+</span>
+<p><img src="/cgi-bin/Count.cgi?font=cd&ft=0"> visitors have opened this page.
+<!-- Start Bravenet.com Service Code -->
+<script language="JavaScript" type="text/javascript" src="http://pub27.bravenet.com/counter/code.php?id=400443&usernum=2263171961&cpv=2">
+</script>
+<!-- END DO NOT MODIFY -->
+</body>
+</html>
